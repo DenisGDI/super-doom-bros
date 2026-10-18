@@ -15,6 +15,7 @@ script = ExtResource("1_kyqiw")
 shape = SubResource("CapsuleShape2D_qxxej")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1020315859]
+visible = false
 position = Vector2(-1, -2)
 texture = ExtResource("1_rpqav")
 region_enabled = true
@@ -25,6 +26,6 @@ zoom = Vector2(5, 5)
 position_smoothing_enabled = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1526006562]
+position = Vector2(-1, -2)
 sprite_frames = ExtResource("2_kyqiw")
-animation = &"Walk"
-frame_progress = 0.4744192
+animation = &"Die"
