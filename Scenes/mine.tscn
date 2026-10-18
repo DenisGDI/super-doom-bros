@@ -1,0 +1,26 @@
+[gd_scene format=4 uid="uid://buftrtkct2i4k"]
+
+[ext_resource type="PackedScene" uid="uid://dsqowceda8nmi" path="res://Scenes/Player.tscn" id="1_qoe3o"]
+[ext_resource type="Texture2D" uid="uid://k75hkjrypbbf" path="res://Sprites/tile.png" id="2_mygvu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mygvu"]
+texture = ExtResource("2_mygvu")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_rajuv"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_mygvu")
+
+[node name="Node2D" type="Node2D" unique_id=1990905215]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1076533173]
+tile_map_data = PackedByteArray("AAD//ycAAAABAAAAAAAAACcAAAABAAAAAAABACcAAAABAAAAAAACACcAAAABAAAAAAADACcAAAABAAAAAAAEACcAAAABAAAAAAAFACcAAAABAAAAAAAGACcAAAABAAAAAAAHACcAAAABAAAAAAAIACcAAAABAAAAAAAJACcAAAABAAAAAAAKACcAAAABAAAAAAALACcAAAABAAAAAAD8/ycAAAAAAAAAAAD9/ycAAAABAAAAAAD+/ycAAAACAAAAAAAFACUAAAAAAAAAAAAGACUAAAABAAAAAAAHACUAAAACAAAAAAANACUAAAAAAAAAAAAOACUAAAABAAAAAAAPACUAAAACAAAAAAARACMAAAAAAAAAAAASACMAAAABAAAAAAATACMAAAACAAAAAAAAACMAAAAAAAAAAAABACMAAAABAAAAAAACACMAAAACAAAAAAA=")
+tile_set = SubResource("TileSet_rajuv")
+
+[node name="Player" parent="." unique_id=735072913 instance=ExtResource("1_qoe3o")]
+position = Vector2(116, 564)
