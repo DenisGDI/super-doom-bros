@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://drqwyvawq5gnr" path="res://Scripts/Player.cs" id="1_kyqiw"]
 [ext_resource type="Texture2D" uid="uid://b5t6886go5hra" path="res://Sprites/Player.png" id="1_rpqav"]
+[ext_resource type="SpriteFrames" uid="uid://bqoue7uxknwya" path="res://Sprites/Player.aseprite" id="2_kyqiw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qxxej"]
 radius = 6.0
@@ -22,3 +23,8 @@ region_rect = Rect2(0, 0, 24, 24)
 [node name="Camera2D" type="Camera2D" parent="." unique_id=238649814]
 zoom = Vector2(5, 5)
 position_smoothing_enabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1526006562]
+sprite_frames = ExtResource("2_kyqiw")
+animation = &"Walk"
+frame_progress = 0.4744192
