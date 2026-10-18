@@ -3,8 +3,10 @@ using System;
 
 public partial class Player : CharacterBody2D
 {
-	public const float Speed = 300.0f;
-	public const float JumpVelocity = -400.0f;
+	[Export]
+	public float Speed = 100.0f;
+	[Export]
+	public float JumpVelocity = -400.0f;
 
 	// Ссылка на наш AnimatedSprite2D
 	private AnimatedSprite2D _animatedSprite;
@@ -73,7 +75,7 @@ public partial class Player : CharacterBody2D
 		{
 			// Если анимации Idle нет, используй первый кадр Walk или Run
 			// (если добавишь тег "Idle" в Aseprite, поменяй здесь на "Idle")
-			_animatedSprite.Play("Walk"); 
+			_animatedSprite.Play("Idle"); 
 			_animatedSprite.Pause(); // Останавливаем на первом кадре
 		}
 	}
