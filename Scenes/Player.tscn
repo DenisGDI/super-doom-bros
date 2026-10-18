@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dsqowceda8nmi"]
 
 [ext_resource type="Script" uid="uid://drqwyvawq5gnr" path="res://Scripts/Player.cs" id="1_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://cc6f56xhgce8c" path="res://Sprites/Player.png" id="1_rpqav"]
+[ext_resource type="Texture2D" uid="uid://b5t6886go5hra" path="res://Sprites/Player.png" id="1_rpqav"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qxxej"]
 radius = 6.0
@@ -13,11 +13,12 @@ script = ExtResource("1_kyqiw")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1017255157]
 shape = SubResource("CapsuleShape2D_qxxej")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=298342024]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1020315859]
+position = Vector2(-1, -2)
 texture = ExtResource("1_rpqav")
+region_enabled = true
+region_rect = Rect2(0, 0, 24, 24)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=238649814]
 zoom = Vector2(5, 5)
 position_smoothing_enabled = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1561164092]
